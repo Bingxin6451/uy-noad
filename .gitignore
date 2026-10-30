@@ -1,0 +1,6 @@
+work/
+*.apk
+*.jks
+*.idsig
+aligned.apk
+noad-unsigned.apk
