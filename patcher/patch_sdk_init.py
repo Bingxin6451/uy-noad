@@ -45,6 +45,8 @@ if __name__ == '__main__':
     targets = [
         ('smali_classes4/com/kwad/sdk/api/KsAdSDK.smali', ' init('),
         ('smali_classes3/com/bytedance/sdk/openadsdk/TTAdSdk.smali', ' init('),
+        # start() 必须在 init 置空后一起置空，否则抛 "TTAdConfig is null" 崩溃
+        ('smali_classes3/com/bytedance/sdk/openadsdk/TTAdSdk.smali', ' start('),
     ]
     total = 0
     for rel, sig in targets:

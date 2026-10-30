@@ -22,6 +22,9 @@ python3 patcher/patch_manifest.py "$WORK"
 echo "==> 开屏短路"
 python3 patcher/patch_splash.py "$WORK"
 
+echo "==> 关闭升级弹窗"
+python3 patcher/patch_update.py "$WORK"
+
 echo "==> SDK init 空炮"
 python3 patcher/patch_sdk_init.py "$WORK"
 
